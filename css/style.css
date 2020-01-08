@@ -1,4 +1,4 @@
-/* Generated on: Wed Jan 08 2020 16:35:02 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Wed Jan 08 2020 19:11:51 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -1565,12 +1565,20 @@ h2 {
   top: 0%;
   right: 0%;
   bottom: 0%;
-  display: block;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url("../images/5e143d8c06a3610e06032c7a_termo_close.png");
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 50% 50%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -2764,22 +2772,10 @@ h2 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-image: url("../images/5dde7f1b798222665be72f24_181015_Extra_DanangDrone_004.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-
-}
-.video-bg {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	position: fixed;
-	background: url("../images/5dde7f1b798222665be72f24_181015_Extra_DanangDrone_004.jpg") no-repeat;
-	background-size: cover;
-	z-index: -1;
-	
-
 }
 
 .portfolio__main-screen_info-wrap {
@@ -2809,6 +2805,14 @@ h2 {
   font-family: Inconsolata, monospace;
   color: #fff;
   text-align: center;
+}
+
+.portfolio_name {
+  display: block;
+}
+
+.portfolio_email {
+  display: block;
 }
 
 .portfolio__main-descript_h1 {
@@ -2869,10 +2873,6 @@ h2 {
 }
 
 .portfolio__section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 40px;
   padding-bottom: 80px;
   -webkit-box-pack: center;
@@ -2978,6 +2978,7 @@ h2 {
 
 .portfolio__work-info {
   position: relative;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3159,20 +3160,30 @@ h2 {
 
 .site-preview_card {
   position: relative;
-  width: 50%;
+  display: inline-block;
+  width: 49.5%;
   height: 305px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
+  margin-right: 3px;
+  margin-left: 3px;
   align-self: flex-end;
   -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  border: 0px solid #000;
   background-color: #201e1e;
   background-image: url("../images/5ddfc0e828a7475e6d77f8e4_fabrica-coffee-screen.jpg");
   background-position: 50% 0%;
-  background-size: cover;
+  background-size: 108%;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .site-preview_card._2 {
@@ -4599,10 +4610,6 @@ h2 {
 }
 
 .portfolio-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   height: 120px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -4618,14 +4625,10 @@ h2 {
 
 .portfolio__footer-wrap {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 1000px;
-  margin-top: 4px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 32px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -4652,6 +4655,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+  text-align: center;
 }
 
 .portfolio__title-text {
@@ -5524,26 +5528,21 @@ h2 {
 }
 
 .slide-content-wrap {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
@@ -5551,6 +5550,8 @@ h2 {
 }
 
 .slide-content-wrap.cards {
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 55px;
   padding-bottom: 80px;
 }
@@ -5568,9 +5569,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  width: 100%;
   height: 800px;
-  margin-right: auto;
-  margin-left: auto;
   background-image: url("../images/5e148384a18ed9063eabf379_flacon_bg_1920.jpg");
   background-position: 50% 50%;
   background-size: cover;
@@ -5716,8 +5716,8 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   background-image: url("../images/5e143d1806a3613305032b7d_termo_open.png");
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 50% 50%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -6412,6 +6412,33 @@ h2 {
   align-items: center;
 }
 
+.site-preview_card__wrap {
+  display: block;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+.div-block-20 {
+  display: inline-block;
+  width: 50%;
+  height: 100px;
+  background-color: #95e1d3;
+}
+
+.div-block-21 {
+  display: inline-block;
+  width: 50%;
+  height: 100px;
+  background-color: #fce38a;
+}
+
 @media (max-width: 991px) {
   ._3dc-card-wrapper {
     margin-right: auto;
@@ -6502,6 +6529,9 @@ h2 {
   }
   .portfolio__section.cards {
     padding-bottom: 0px;
+  }
+  .portfolio__work-info {
+    width: 50%;
   }
   .section-title {
     -webkit-box-flex: 1;
@@ -6620,6 +6650,15 @@ h2 {
     top: 90%;
     right: auto;
     bottom: auto;
+  }
+  .site-preview_card__wrap {
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 }
 

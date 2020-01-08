@@ -1,4 +1,4 @@
-/* Generated on: Wed Jan 08 2020 19:11:51 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Wed Jan 08 2020 19:17:38 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -3161,10 +3161,8 @@ h2 {
 .site-preview_card {
   position: relative;
   display: inline-block;
-  width: 49.5%;
+  width: 50%;
   height: 305px;
-  margin-right: 3px;
-  margin-left: 3px;
   align-self: flex-end;
   -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
@@ -6413,8 +6411,22 @@ h2 {
 }
 
 .site-preview_card__wrap {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-auto-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;

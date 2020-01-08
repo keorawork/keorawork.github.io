@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			min-height: 100vh;
+			font-family: sans-serif;
+		}
+		.text h1 {
+			text-transform: uppercase;
+			font-size: 55px;
+			color: #FFF;
+			line-height: 1px;
+		}
+		p {
+			text-transform: uppercase;
+			font-size: 40px;
+			color: #25d9d9;
+			line-height: 1px;
+		}
+		.video-bg {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			position: fixed;
+			background: url(1images/5dde7f1b798222665be72f24_181015_Extra_DanangDrone_004.jpg) no-repeat;
+			background-size: cover;
+			z-index: -1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="text">
+		<h1>Видеофон для сайта</h1>
+		<p>На html и css</p>
+	</div>
+	<div class="video-bg">
+		<video autoplay="autoplay" loop="loop">
+       <source src="video/1.mp4" type="video/mp4">
+       <source src="video/1.webm" type="video/webm">
+       <source src="video/1.ogv" type="video/ogg"/>
+    </video>
+	</div>
+</body>
+</html>

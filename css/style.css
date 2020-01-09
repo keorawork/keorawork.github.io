@@ -1,4 +1,4 @@
-/* Generated on: Thu Jan 09 2020 11:50:49 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Thu Jan 09 2020 14:09:05 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -6929,6 +6929,9 @@ h2 {
   }
   .section-title {
     font-size: 40px;
+  }
+  .site-preview_card {
+    margin-bottom: 15px;
   }
   .portfolio_section-title {
     margin-bottom: 45px;

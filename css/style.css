@@ -1,4 +1,4 @@
-/* Generated on: Wed Jan 08 2020 19:37:38 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Thu Jan 09 2020 11:50:49 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -3189,12 +3189,13 @@ h2 {
 }
 
 .site-preview_card._3 {
-  background-image: url("../images/5dee5fd29357e0d860296ede_harley-davidson.JPG");
-  background-position: 100% 0%;
+  background-image: url("../images/5e1703ffcb9d51106ee041c6_two-wheels.jpg");
+  background-position: 50% 0%;
+  background-size: 112%;
 }
 
 .site-preview_card._4 {
-  background-image: url("../images/5dee600af503d275cdaa58df_mogo.JPG");
+  background-image: url("../images/5e1703fe3c053f86b48413e3_mogo.jpg");
 }
 
 .portfolio__section-content-wrap1 {
@@ -6609,7 +6610,7 @@ h2 {
     width: 100%;
   }
   .slide-content-wrap.flacon {
-    width: 90%;
+    width: 100%;
   }
   .slider__slide {
     text-align: center;
@@ -6625,7 +6626,7 @@ h2 {
     height: 500px;
   }
   .flacon-img-flacon {
-    left: 52px;
+    left: 77px;
   }
   .branch2 {
     right: -250px;
@@ -6754,6 +6755,13 @@ h2 {
   .section-title {
     padding-top: 11px;
   }
+  .site-preview_card {
+    background-size: 118%;
+  }
+  .site-preview_card._3 {
+    background-position: 50% 0%;
+    background-size: 130%;
+  }
   .portfolio_section-title {
     margin-bottom: 43px;
   }
@@ -6881,9 +6889,22 @@ h2 {
   ._3dc-s-2__card2-wrap.card4 {
     display: block;
     width: 90%;
+    margin-top: 13px;
   }
   ._3dc-card2 {
-    height: 370px;
+    height: 320px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  ._3dc-card2_h1 {
+    margin-top: 0px;
+  }
+  ._3dc-card2_price {
+    margin-top: 0px;
   }
   .portfolio__s-1 {
     display: -webkit-box;
@@ -6929,12 +6950,15 @@ h2 {
     margin-top: 58px;
     padding-top: 0px;
   }
+  .slide-content-wrap.cards {
+    padding-top: 20px;
+  }
   .slide-content-wrap.doors {
     margin-right: auto;
     margin-left: 31px;
   }
   .slide-content-wrap.flacon {
-    width: 90%;
+    width: 100%;
   }
   .slider_arrow-wrap {
     left: 70px;
@@ -6960,7 +6984,7 @@ h2 {
     height: 204px;
   }
   .flacon-img-flacon {
-    left: -15px;
+    left: -14px;
     width: 100%;
   }
   .branch2 {
@@ -7067,6 +7091,9 @@ h2 {
   }
   .s1_videobg {
     display: none;
+  }
+  .image-31 {
+    width: 90%;
   }
 }
 

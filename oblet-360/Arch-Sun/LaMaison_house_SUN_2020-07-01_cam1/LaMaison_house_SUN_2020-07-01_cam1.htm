@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        table th, table td
+        {
+            padding: 0px;
+        }
+        table img
+        {
+            width: 1200px;
+            height: 649px;
+        }
+        .section {
+            width: 100%;
+            background-color: #a0a0a0;
+        }
+        
+        .section-wrap{
+            width: 1200px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .instruction{
+            background-color: #333;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-family: Tahoma, Arial, Sans-Serif;
+            font-size: 16px;
+            
+        }
+        .instruction-wrap {
+            width: 1152px;
+            margin: 0 auto;
+            
+        }
+
+        .title-project {
+            padding-bottom: 25px;
+        }
+
+        .title-project span{
+          font-size: 55px;
+          padding-right: 50px;
+
+          
+          
+        }
+        .cameras-nav .title {
+            padding-right: 20px;
+
+        }
+            
+        .cameras-nav{
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .cameras-nav .divide{
+            padding: 30px;
+        }
+        .cameras-nav .active{
+            color: #d4981f;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: #fff;
+        }
+        a:hover{
+            color: #d4981f;
+        }
+        
+    </style>
+        
+</head>
+
+
+
+<body>
+<div class="section">
+    <div class="section-wrap">
+
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <img src="" id="product1" />
+            </td>
+        </tr>
+	</table>
+    <div id="dvImages" style="display: none">        
+        <img src="SUN_2020-07-01_01-00.jpg" />
+        <img src="SUN_2020-07-01_02-00.jpg" />
+        <img src="SUN_2020-07-01_03-00.jpg" />
+        <img src="SUN_2020-07-01_04-00.jpg" />
+        <img src="SUN_2020-07-01_05-00.jpg" />
+        <img src="SUN_2020-07-01_06-00.jpg" />
+        <img src="SUN_2020-07-01_07-00.jpg" />
+        <img src="SUN_2020-07-01_08-00.jpg" />
+        <img src="SUN_2020-07-01_09-00.jpg" />
+        <img src="SUN_2020-07-01_10-00.jpg" />
+        <img src="SUN_2020-07-01_11-00.jpg" />
+        <img src="SUN_2020-07-01_12-00.jpg" />
+        <img src="SUN_2020-07-01_13-00.jpg" />
+        <img src="SUN_2020-07-01_14-00.jpg" />
+        <img src="SUN_2020-07-01_15-00.jpg" />
+        <img src="SUN_2020-07-01_16-00.jpg" />
+        <img src="SUN_2020-07-01_17-00.jpg" />
+        <img src="SUN_2020-07-01_18-00.jpg" />
+        <img src="SUN_2020-07-01_19-00.jpg" />
+        <img src="SUN_2020-07-01_20-00.jpg" />
+        <img src="SUN_2020-07-01_21-00.jpg" />
+        <img src="SUN_2020-07-01_22-00.jpg" />
+        <img src="SUN_2020-07-01_23-00.jpg" />
+        <img src="SUN_2020-07-01_00-00.jpg" />
+    </div>
+        <div class="oblet_tur-nav">
+                <div class="instruction">
+                        <div class="instruction-wrap">
+                            <div class="title-project"><span>LaMaison</span>Нажмите на картинке левой кнопкой мыши и двигайте влево-вправо</div>
+                           
+                            <div class="info">
+                                <div class="cameras-nav"><span class="active"><span class="title">ЛЕТО</span></span>
+                                    
+                                    <a href="#"><span class="active">CAM1</span></a><a href="#">CAM2</a><a href="#">CAM3</a>
+
+                                    <span class="divide">|</span>
+                                </div>
+
+                                <div class="cameras-nav"><span class="title">ЗИМА</span>
+                                    <a href="#">CAM1</a><a href="#">CAM2</a><a href="#">CAM3</a>
+                                </div>
+                                <img class="map" src="SUN_2020-07-01__INFO.jpg">
+                            </div>
+                        </div>
+               
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.rawgit.com/matdumsa/jQuery.threesixty/master/jquery.threesixty.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //Load the image URLs into an Array.
+            var arr = new Array();
+            $("#dvImages img").each(function () {
+                arr.push($(this).attr("src"));
+            });
+
+            //Set the first image URL as source for the Product.
+            $("#product1, #product2, #product3").attr("src", arr[0]);
+
+            //Click mode.
+            $("#product1").threesixty({ images: arr,
+                method: 'click',
+                sensibility: 2
+            });
+        });
+    </script>
+</body>
+</html>

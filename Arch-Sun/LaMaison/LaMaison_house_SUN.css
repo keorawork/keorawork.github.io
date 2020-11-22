@@ -1,0 +1,79 @@
+﻿        .section {
+            width: 100%;
+            background-color: #a0a0a0;
+        }
+        
+        .section-wrap{
+            width: 1200px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .instruction{
+            background-color: #333;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-family: Tahoma, Arial, Sans-Serif;
+            font-size: 16px;
+            
+        }
+        .instruction-wrap {
+            width: 1152px;
+            margin: 0 auto;
+            
+        }
+
+        .title-project {
+            padding-bottom: 25px;
+        }
+
+        .title-project span{
+          font-size: 55px;
+          padding-right: 50px;
+
+          
+          
+        }
+        .cameras-nav .title {
+            padding-right: 20px;
+
+        }
+            
+        .cameras-nav{
+            display: inline-block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .cameras-nav .divide{
+            padding: 30px;
+        }
+        .cameras-nav .active{
+            color: #d4981f;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: #fff;
+        }
+        a:hover{
+            color: #d4981f;
+        }
+
+        a .gray{
+            color: #777;
+        }
+
+
+    #rotation{
+        
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #rotation img{
+        width: 1200px;
+        cursor: move;
+    }

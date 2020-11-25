@@ -4,10 +4,11 @@
         }
         
         .section-wrap{
-            width: 1200px;
+            width: 1280px;
             margin: 0 auto;
             padding-top: 20px;
         }
+
 
         .instruction{
             background-color: #333;
@@ -18,7 +19,7 @@
             font-size: 16px;
             
         }
-        .instruction-wrap {
+        .info {
             width: 1152px;
             margin: 0 auto;
             
@@ -28,15 +29,17 @@
             padding-bottom: 25px;
         }
 
-        .title-project span{
+        .info .title-project {
           font-size: 55px;
           padding-right: 50px;
+          display: inline-block;
 
           
           
         }
         .cameras-nav .title {
-            padding-right: 20px;
+            padding-right: 8px;
+            font-size: 12px;
 
         }
             
@@ -49,14 +52,19 @@
         .cameras-nav .divide{
             padding: 30px;
         }
-        .cameras-nav .active{
+        .cameras-nav .active, .active a{
             color: #d4981f;
+            border-color: #d4981f;
         }
 
         a {
+            font-size: 16px;
             text-decoration: none;
-            padding: 10px;
+            padding: 5px 10px 5px 10px;
             color: #fff;
+            border: 1px solid;
+            border-radius: 4px;
+            margin: 5px;
         }
         a:hover{
             color: #d4981f;
@@ -64,6 +72,9 @@
 
         a .gray{
             color: #777;
+        }
+        a .active {
+           
         }
 
 
@@ -74,6 +85,6 @@
         padding: 0;
     }
     #rotation img{
-        width: 1200px;
+        width: 1280px;
         cursor: move;
     }
